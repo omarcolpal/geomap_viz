@@ -1,0 +1,24 @@
+{
+  "name": "My Visualizations",
+  "organization": "MyOrg",
+  "description": "My first visualization package.",
+  "logoUrl": "https://logo",
+  "organizationUrl": "https://url",
+  "supportUrl": "https://url",
+  "privacyPolicyUrl": "https://url",
+  "termsOfServiceUrl": "https://url",
+  "packageUrl": "https://url",
+  "devMode": "DEVMODE_BOOL",
+  "components": [
+    {
+      "name": "geo_viz",
+      "description": "geomap visualizaion",
+      "iconUrl": "https://url",
+      "resource": {
+        "js": "gs://viz-test-2/geo/index.js",
+        "config": "gs://viz-test-2/geo/index.json",
+        "css": "gs://viz-test-2/geo/index.css"
+      }
+    }
+  ]
+}

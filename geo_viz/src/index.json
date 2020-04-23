@@ -1,0 +1,103 @@
+{
+  "data": [
+    {
+      "id": "concepts",
+      "label": "Concepts",
+      "elements": [
+        {
+          "id": "dimID",
+          "label": "A dimension",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 100
+          }
+        },
+        {
+          "id": "metricID",
+          "label": "A metric",
+          "type": "METRIC",
+          "options": {
+            "min": 1,
+            "max": 100
+          }},
+          {
+            "id": "max",
+            "label": "the max",
+            "type": "MAX_RESULTS",
+            "options": {
+              "max": 1000000
+            }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "colors",
+      "label": "Highlight Colors",
+      "elements": [
+        {
+          "id": "accentColor",
+          "label": "Accent Color",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "rain",
+          "options": [
+            {
+              "label": "Summer",
+              "value": "summer"
+            },
+            {
+              "label": "Fall",
+              "value": "fall"
+            }
+          ]
+        },
+        {
+          "id": "reverseColor",
+          "label": "Show reverse color",
+          "defaultValue": "false",
+          "type": "CHECKBOX"
+        },
+        {
+          "id": "fillColor",
+          "label": "Fill Color",
+          "defaultValue": {
+            "color": "#0000ff"
+          },
+          "type": "FILL_COLOR"
+        },
+        {
+          "id": "textOpacity",
+          "label": "Text Opacity",
+          "defaultValue": "0.2",
+          "type": "OPACITY"
+        },
+        {
+          "id": "customText",
+          "label": "Custom Text",
+          "defaultValue": "0.2",
+          "type": "TEXTINPUT"
+        }
+      ]
+    },
+    {
+      "id": "text",
+      "label": "Highlight Text",
+      "elements": [
+        {
+          "id": "textFontSize",
+          "label": "Font size",
+          "defaultValue": "10",
+          "type": "FONT_SIZE"
+        },
+        {
+          "id": "font",
+          "label": "Font family",
+          "defaultValue": "auto",
+          "type": "FONT_FAMILY"
+        }
+      ]
+    }
+  ]
+}

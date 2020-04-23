@@ -1,0 +1,29 @@
+{
+  "dsccViz": {
+    "gcsDevBucket": "gs://viz-test-2/geo/",
+    "gcsProdBucket": "gs://viz-test-2/geo/",
+    "jsFile": "index.js",
+    "jsonFile": "index.json",
+    "cssFile": "index.css",
+    "print": "printMessage.js"
+  },
+  "scripts": {
+    "build:dev": "dscc-scripts viz build -d dev",
+    "build:prod": "dscc-scripts viz build -d prod",
+    "push:dev": "dscc-scripts viz push -d dev",
+    "push:prod": "dscc-scripts viz push -d prod",
+    "update_message": "dscc-scripts viz update_message -f object",
+    "start": "dscc-scripts viz start"
+  },
+  "devDependencies": {
+    "@google/dscc": "^0.3.8",
+    "@google/dscc-scripts": "^1.0.15"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.9.17",
+    "@amcharts/amcharts4-geodata": "^4.1.14",
+    "csvtojson": "^2.0.10",
+    "d3": "^5.15.0",
+    "d3-tip": "^0.9.1"
+  }
+}
